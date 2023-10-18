@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterCollectionCell" id="gTV-IL-0wX" customClass="FilterCollectionCell" customModule="MetaMeds" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOj-b1-UrA">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRu-oX-aNW">
+                                <rect key="frame" x="2" y="2" width="96" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RRu-oX-aNW" secondAttribute="trailing" constant="2" id="5Zl-I3-lsi"/>
+                            <constraint firstItem="RRu-oX-aNW" firstAttribute="top" secondItem="lOj-b1-UrA" secondAttribute="top" constant="2" id="OLf-VN-XZ6"/>
+                            <constraint firstAttribute="bottom" secondItem="RRu-oX-aNW" secondAttribute="bottom" constant="2" id="ceR-BU-VXP"/>
+                            <constraint firstItem="RRu-oX-aNW" firstAttribute="leading" secondItem="lOj-b1-UrA" secondAttribute="leading" constant="2" id="gXh-T3-8GM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lOj-b1-UrA" secondAttribute="trailing" id="A3W-J3-kl6"/>
+                <constraint firstItem="lOj-b1-UrA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Haw-BV-zsN"/>
+                <constraint firstItem="lOj-b1-UrA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="anF-b7-2DX"/>
+                <constraint firstAttribute="bottom" secondItem="lOj-b1-UrA" secondAttribute="bottom" id="x10-vA-ztr"/>
+            </constraints>
+            <connections>
+                <outlet property="bg_layout" destination="lOj-b1-UrA" id="jBn-Mh-1HZ"/>
+                <outlet property="name_lbl" destination="RRu-oX-aNW" id="gL7-fd-71e"/>
+            </connections>
+            <point key="canvasLocation" x="-41.221374045801525" y="-11.267605633802818"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
